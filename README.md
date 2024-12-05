@@ -1,5 +1,5 @@
 # PagHiper
-Install the Gateway
+## Install the Gateway
 Upload the source code to a /components/gateways/nonmerchant/paghiper/ directory within your Blesta installation path.
 
 For example:
