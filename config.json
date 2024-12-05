@@ -1,0 +1,18 @@
+{
+    "name": "PagHiper",
+    "description": "Integração com o PagHiper para pagamentos via PIX e boleto.",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Victor Sousa",
+            "url": "https://github.com/Victor-Sousa-hub"
+        }
+    ],
+    "minimum_version": "5.0.0",
+    "gateway": {
+        "type": "nonmerchant",
+        "supports": {
+            "process": true
+        }
+    }
+}

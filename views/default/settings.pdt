@@ -1,0 +1,22 @@
+<h2><?php echo $this->Html->ifSet($meta['name'], "Configuração do PagHiper"); ?></h2>
+
+<form method="post" action="<?php echo $this->Html->ifSet($this->action); ?>">
+    <div class="form-group">
+        <?php $api_key_label = $this->_("PagHiper.settings.api_key"); ?>
+        <label><?php echo $this->Html->ifSet($api_key_label); ?></label>
+        <input type="text" name="api_key" value="<?php echo $this->Html->ifSet($meta['api_key']); ?>" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <?php $api_key_label = $this->_("PagHiper.settings.api_key"); ?>
+        <label><?php echo $this->Html->ifSet($api_key_label); ?></label>
+        <select name="payment_type" class="form-control">
+            <option value="pix" <?php echo $this->Html->ifSet($meta['payment_type']) == "pix" ? "selected" : ""; ?>>PIX</option>
+            <option value="boleto" <?php echo $this->Html->ifSet($meta['payment_type']) == "boleto" ? "selected" : ""; ?>>Boleto</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </div>
+</form>

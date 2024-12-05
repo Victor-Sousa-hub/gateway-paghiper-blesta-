@@ -1,0 +1,9 @@
+{
+    "name": "blesta/paghiper",
+    "description": "Gateway de pagamento para PagHiper via PIX e boleto.",
+    "license": "proprietary",
+    "type": "blesta-gateway-nonmerchant",
+    "require": {
+        "blesta/composer-installer": "~1.0"
+    }
+}

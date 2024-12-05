@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecionando...</title>
+</head>
+<body onload="document.getElementById('paghiper_form').submit();">
+    <p>Você será redirecionado para a página de pagamento. Se não for redirecionado automaticamente, clique no botão abaixo.</p>
+    <form id="paghiper_form" action="<?php echo $post_to; ?>" method="get">
+        <button type="submit">Pagar Agora</button>
+    </form>
+</body>
+</html>
